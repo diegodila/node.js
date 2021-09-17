@@ -1,3 +1,8 @@
+var sum = require("./calculator")
+
+console.log(sum(20,4))
+
+
 var mostrarSite = true;
 const site = "www.artix.com.br"
 
