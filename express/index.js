@@ -17,7 +17,14 @@ app.get("/blog/:article?", function(req,res){
 })
 
 app.get("/channel/youtube", function(req,res){
-    res.send(" Welcome to my channel")
+    var channel = req.query["channel"];
+    // res.send(" Welcome to my channel")
+    if(channel){
+        res.send(channel)
+    }
+    else{
+        res.send("<h1>Nenhum canal fornecido</h1>")
+    }
 })
 
 app.get("/hello/:name/:company",function(req,res){
