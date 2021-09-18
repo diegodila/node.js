@@ -7,7 +7,7 @@ app.get("/", function(req, res){
     // nao podemos deixar de enviar alguma coisa na rota 
 });
 app.get("/blog", function(req,res){
-    res.send("Welcome to my blog")
+    res.send("<h1>Welcome to my blog</h1>")
 })
 
 app.get("/channel/youtube", function(req,res){
